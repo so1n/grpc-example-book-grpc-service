@@ -5,10 +5,10 @@ import pytest
 
 from book_grpc_service.handler.social import SocialService
 from book_grpc_service.helper.conn_proxy import SteadyDBConnection, g_db_pool
-from book_grpc_service.helper.grpc_wrapper import auto_load_wrapper_by_stub, grpc_client_func_wrapper
-from book_grpc_service.interceptor.customer_top import CustomerTopInterceptor
-from book_grpc_service.protos import social_pb2, social_pb2_grpc
-from tests.client_interceptor.customer_top import (
+from grpc_example_common.helper.grpc_wrapper import auto_load_wrapper_by_stub, grpc_client_func_wrapper
+from grpc_example_common.interceptor.server_interceptor.customer_top import CustomerTopInterceptor
+from grpc_example_common.protos.book import social_pb2, social_pb2_grpc
+from grpc_example_common.interceptor.client_interceptor.customer_top import (
     CustomerTopInterceptor as ClientCustomerTopInterceptor,
 )
 

@@ -7,8 +7,8 @@ import grpc
 
 from book_grpc_service.handler.manager import ManagerService, manager_service
 from book_grpc_service.handler.social import SocialService, social_service
-from book_grpc_service.interceptor.base import BaseInterceptor
-from book_grpc_service.interceptor.customer_top import CustomerTopInterceptor
+from grpc_example_common.interceptor.client_interceptor.base import BaseInterceptor
+from grpc_example_common.interceptor.client_interceptor.customer_top import CustomerTopInterceptor
 
 logging.basicConfig(
     format="[%(asctime)s %(levelname)s] %(message)s",

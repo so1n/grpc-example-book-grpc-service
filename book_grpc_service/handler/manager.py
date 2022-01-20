@@ -3,9 +3,9 @@ from google.protobuf.empty_pb2 import Empty
 
 from book_grpc_service.dal.manager import manager_dal
 from book_grpc_service.helper.conn_proxy import conn_proxy
-from book_grpc_service.helper.field import proto_load, timestamp_to_datetime
-from book_grpc_service.protos import manager_pb2 as manager_message
-from book_grpc_service.protos import manager_pb2_grpc as manager_service
+from grpc_example_common.helper.field import proto_load, timestamp_to_datetime
+from grpc_example_common.protos.book import manager_pb2 as manager_message
+from grpc_example_common.protos.book import manager_pb2_grpc as manager_service
 
 
 class ManagerService(manager_service.BookManagerServicer):

@@ -6,7 +6,7 @@ from dbutils.pooled_db import PooledDB  # type: ignore
 from dbutils.steady_db import SteadyDBConnection  # type: ignore
 from pymysql import cursors
 
-from book_grpc_service.helper.context import context_proxy
+from grpc_example_common.helper.context import context_proxy
 
 # Need to use configuration management when producing the system
 g_db_pool: PooledDB = PooledDB(

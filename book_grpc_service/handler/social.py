@@ -3,13 +3,13 @@ from google.protobuf.empty_pb2 import Empty
 
 from book_grpc_service.dal.social import social_dal
 from book_grpc_service.helper.conn_proxy import conn_proxy
-from book_grpc_service.helper.field import (
+from grpc_example_common.helper.field import (
     proto_load,
     repeat_to_list,
     timestamp_to_datetime,
 )
-from book_grpc_service.protos import social_pb2 as social_message
-from book_grpc_service.protos import social_pb2_grpc as social_service
+from grpc_example_common.protos.book import social_pb2 as social_message
+from grpc_example_common.protos.book import social_pb2_grpc as social_service
 
 
 class SocialService(social_service.BookSocialServicer):
